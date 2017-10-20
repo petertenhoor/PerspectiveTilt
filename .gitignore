@@ -1,0 +1,17 @@
+.DS_Store
+node_modules
+.Vagrantfile.swp
+thumbs.db
+*.log
+.vagrant/
+.idea/
+.sass-cache/
+.tmp/
+sitemap.xml
+sitemap.xml.gz
+node_modules/
+public/readme.html
+public/sitemap.xml
+public/sitemap.xml.gz
+public/vendor
+/vendor/
