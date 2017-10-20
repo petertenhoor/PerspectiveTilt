@@ -1,0 +1,73 @@
+body, html {
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: calc(100vw - 50px);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: #03A9F4;
+  margin: 0 10px;
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+  height: 50vh;
+  z-index: 3;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(0);
+  cursor: pointer;
+  position: relative;
+}
+
+.box:hover {
+  background-color: #148ef4;
+}
+
+.box-content-container {
+  transform: translateZ(40px);
+  backface-visibility: hidden;
+  border: 3px solid white;
+  box-sizing: border-box;
+  margin: 40px;
+  padding: 40px;
+  position: absolute;
+  width: calc(100% - 80px);
+  height: calc(100% - 80px);
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box-content-container * {
+  backface-visibility: hidden;
+  transform: translateZ(80px);
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  font-family: helvetica;
+}
+
+.box-content-container h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.box-content-container p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
